@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Assignment_Suite">
-              <span class="suite-name border-failed">Assignment Suite</span>
+              <span class="suite-name border-passed">Assignment Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Assignment_Suite" class="hide-methods failed suite-Assignment_Suite"> (hide)</a> <!-- hide-methods failed suite-Assignment_Suite -->
-                      <a href="#" panel-name="suite-Assignment_Suite" class="show-methods failed suite-Assignment_Suite"> (show)</a> <!-- show-methods failed suite-Assignment_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Assignment_Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerApiTest" hash-for-method="test_query_amount_of_tax_relief_for_each_person">test_query_amount_of_tax_relief_for_each_person</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Assignment_Suite -->
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,6 +117,16 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerApiTest" hash-for-method="test_query_amount_of_tax_relief_for_each_person">test_query_amount_of_tax_relief_for_each_person</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerApiTest" hash-for-method="test_rake_database">test_rake_database</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerGuiTest" hash-for-method="test_rake_database">test_rake_database</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -151,25 +147,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Assignment_Suite" class="panel Assignment_Suite">
-          <div class="suite-Assignment_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.govtech.assignment.OppenheimerApiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_query_amount_of_tax_relief_for_each_person">
-                  </a> <!-- test_query_amount_of_tax_relief_for_each_person -->
-                  <span class="method-name">test_query_amount_of_tax_relief_for_each_person</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1. Tax relief is wrongly calculated for- Jon expected [0.00] but found [1816.65]
-	at com.govtech.assignment.OppenheimerApiTest.test_query_amount_of_tax_relief_for_each_person(OppenheimerApiTest.java:149)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Assignment_Suite-class-failed -->
           <div class="suite-Assignment_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -218,6 +195,20 @@
                   </a> <!-- test_insert_single_record_of_working_class_hero(com.govtech.assignment.HeroDetails@2f521c4) -->
                   <span class="method-name">test_insert_single_record_of_working_class_hero</span>
                   <span class="parameters">(com.govtech.assignment.HeroDetails@2f521c4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_query_amount_of_tax_relief_for_each_person">
+                  </a> <!-- test_query_amount_of_tax_relief_for_each_person -->
+                  <span class="method-name">test_query_amount_of_tax_relief_for_each_person</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_rake_database">
+                  </a> <!-- test_rake_database -->
+                  <span class="method-name">test_rake_database</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -280,36 +271,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_rake_database')
 data.setCell(0, 2, 'com.govtech.assignment.OppenheimerGuiTest')
-data.setCell(0, 3, 1720);
+data.setCell(0, 3, 1777);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test_query_amount_of_tax_relief_for_each_person')
-data.setCell(1, 2, 'com.govtech.assignment.OppenheimerApiTest')
-data.setCell(1, 3, 898);
+data.setCell(1, 1, 'test_dispense_button_validation')
+data.setCell(1, 2, 'com.govtech.assignment.OppenheimerGuiTest')
+data.setCell(1, 3, 1193);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test_dispense_button_validation')
+data.setCell(2, 1, 'test_upload_csv_to_portal')
 data.setCell(2, 2, 'com.govtech.assignment.OppenheimerGuiTest')
-data.setCell(2, 3, 886);
+data.setCell(2, 3, 727);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test_upload_csv_to_portal')
-data.setCell(3, 2, 'com.govtech.assignment.OppenheimerGuiTest')
-data.setCell(3, 3, 795);
+data.setCell(3, 1, 'test_insert_multiple_record_of_working_class_hero')
+data.setCell(3, 2, 'com.govtech.assignment.OppenheimerApiTest')
+data.setCell(3, 3, 131);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test_insert_multiple_record_of_working_class_hero')
+data.setCell(4, 1, 'test_insert_single_record_of_working_class_hero')
 data.setCell(4, 2, 'com.govtech.assignment.OppenheimerApiTest')
-data.setCell(4, 3, 127);
+data.setCell(4, 3, 87);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'test_insert_single_record_of_working_class_hero')
+data.setCell(5, 1, 'test_rake_database')
 data.setCell(5, 2, 'com.govtech.assignment.OppenheimerApiTest')
-data.setCell(5, 3, 89);
+data.setCell(5, 3, 33);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test_query_amount_of_tax_relief_for_each_person')
+data.setCell(6, 2, 'com.govtech.assignment.OppenheimerApiTest')
+data.setCell(6, 3, 21);
 window.suiteTableData['Assignment_Suite']= { tableData: data, tableDiv: 'times-div-Assignment_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Assignment_Suite">
               </div> <!-- times-div-Assignment_Suite -->
             </div> <!-- times-div -->
@@ -346,84 +341,86 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_rake_database() throws java.io.IOExceptio...)</span>
-                <span class="method-start">406 ms</span>
+                <span class="method-start">401 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTestSetup</span>
-                <span class="method-start">407 ms</span>
+                <span class="method-start">401 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_rake_database</span>
-                <span class="method-start">4760 ms</span>
+                <span class="method-start">4661 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6496 ms</span>
+                <span class="method-start">6458 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_rake_database() throws java.io.IOExceptio...)</span>
-                <span class="method-start">7356 ms</span>
+                <span class="method-start">11280 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_upload_csv_to_portal() throws java.io.IOE...)</span>
-                <span class="method-start">7358 ms</span>
+                <span class="method-start">11289 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTestSetup</span>
-                <span class="method-start">7358 ms</span>
+                <span class="method-start">11289 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_upload_csv_to_portal</span>
-                <span class="method-start">11635 ms</span>
+                <span class="method-start">14494 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12818 ms</span>
+                <span class="method-start">15579 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_upload_csv_to_portal() throws java.io.IOE...)</span>
-                <span class="method-start">13549 ms</span>
+                <span class="method-start">16307 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">springTestContextBeforeTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_dispense_button_validation())</span>
-                <span class="method-start">13551 ms</span>
+                <span class="method-start">16311 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTestSetup</span>
-                <span class="method-start">13552 ms</span>
+                <span class="method-start">16311 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_dispense_button_validation</span>
-                <span class="method-start">16631 ms</span>
+                <span class="method-start">19385 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18124 ms</span>
+                <span class="method-start">20978 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">springTestContextAfterTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_dispense_button_validation())</span>
-                <span class="method-start">18927 ms</span>
+                <span class="method-start">21700 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">springTestContextAfterTestClass</span>
-                <span class="method-start">18928 ms</span>
+                <span class="method-start">21701 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.govtech.assignment.OppenheimerApiTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test_insert_single_record_of_working_class_hero(com.govtech.assignment.HeroDetails@2f521c4)</span>
-                <span class="method-start">18929 ms</span>
+                <span class="method-start">21703 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_insert_multiple_record_of_working_class_hero</span>
-                <span class="method-start">19020 ms</span>
+                <span class="method-start">21793 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
+                <span class="method-name">test_rake_database</span>
+                <span class="method-start">21924 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">test_query_amount_of_tax_relief_for_each_person</span>
-                <span class="method-start">19152 ms</span>
+                <span class="method-start">21958 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

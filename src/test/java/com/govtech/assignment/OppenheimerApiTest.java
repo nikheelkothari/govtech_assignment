@@ -119,6 +119,22 @@ public class OppenheimerApiTest {
 	}
 	
 	@Test(priority = 13)
+	@TestDetails(description = "prerequisite- Rake Data base")
+	public void test_rake_database() throws IOException, InterruptedException {
+		RestAssured.defaultParser = Parser.JSON;
+		String response = RestAssured.given()
+		.headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON)
+		.when()
+		.post(Constants.RAKE_DATABASE_API)
+		.then()
+		.contentType(ContentType.JSON)
+		.statusCode(200)
+		.extract().asString();
+		
+		Assert.assertEquals(response, "Successfully raked DB", "Record Insertion unsuccessful" );
+	}
+	
+	@Test(priority = 14)
 	@TestDetails(description = "As the Bookkeeper, I should be able to query the amount of tax\r\n" + 
 			"relief for each person in the database so that I can report the\r\n" + 
 			"figures to my Bookkeeping Manager")
