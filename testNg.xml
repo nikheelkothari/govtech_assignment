@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Assignment Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.auto.listeners.TestListener" />
+		<listener class-name="com.auto.listeners.WebDriverListener"></listener>
+	</listeners>
+	<parameter name="browser" value="chrome" />
+	<test name="Regression Suite">
+		<classes>
+			<class name="com.govtech.assignment.OppenheimerGuiTest" />
+			<class name="com.govtech.assignment.OppenheimerApiTest" />
+		</classes>
+	</test>
+</suite>

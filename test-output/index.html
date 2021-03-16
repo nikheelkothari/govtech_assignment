@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Assignment_Suite">
+              <span class="suite-name border-failed">Assignment Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Assignment_Suite">
+                    <span>N:\Nikheel\Workspace\govtech_assignment\testNg.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Assignment_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Assignment_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Assignment_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Assignment_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Assignment_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Assignment_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Assignment_Suite" class="hide-methods failed suite-Assignment_Suite"> (hide)</a> <!-- hide-methods failed suite-Assignment_Suite -->
+                      <a href="#" panel-name="suite-Assignment_Suite" class="show-methods failed suite-Assignment_Suite"> (show)</a> <!-- show-methods failed suite-Assignment_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Assignment_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerApiTest" hash-for-method="test_query_amount_of_tax_relief_for_each_person">test_query_amount_of_tax_relief_for_each_person</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Assignment_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Assignment_Suite" class="hide-methods passed suite-Assignment_Suite"> (hide)</a> <!-- hide-methods passed suite-Assignment_Suite -->
+                      <a href="#" panel-name="suite-Assignment_Suite" class="show-methods passed suite-Assignment_Suite"> (show)</a> <!-- show-methods passed suite-Assignment_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Assignment_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerGuiTest" hash-for-method="test_dispense_button_validation">test_dispense_button_validation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerApiTest" hash-for-method="test_insert_multiple_record_of_working_class_hero">test_insert_multiple_record_of_working_class_hero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerApiTest" hash-for-method="test_insert_single_record_of_working_class_hero(com.govtech.assignment.HeroDetails@2f521c4)">test_insert_single_record_of_working_class_hero(com.govtech.assignment.HeroDetails@2f521c4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerGuiTest" hash-for-method="test_rake_database">test_rake_database</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Assignment_Suite" title="com.govtech.assignment.OppenheimerGuiTest" hash-for-method="test_upload_csv_to_portal">test_upload_csv_to_portal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Assignment_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Assignment_Suite" class="panel Assignment_Suite">
+          <div class="suite-Assignment_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.govtech.assignment.OppenheimerApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_query_amount_of_tax_relief_for_each_person">
+                  </a> <!-- test_query_amount_of_tax_relief_for_each_person -->
+                  <span class="method-name">test_query_amount_of_tax_relief_for_each_person</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1. Tax relief is wrongly calculated for- Jon expected [0.00] but found [1816.65]
+	at com.govtech.assignment.OppenheimerApiTest.test_query_amount_of_tax_relief_for_each_person(OppenheimerApiTest.java:149)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Assignment_Suite-class-failed -->
+          <div class="suite-Assignment_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.govtech.assignment.OppenheimerGuiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_dispense_button_validation">
+                  </a> <!-- test_dispense_button_validation -->
+                  <span class="method-name">test_dispense_button_validation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_rake_database">
+                  </a> <!-- test_rake_database -->
+                  <span class="method-name">test_rake_database</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_upload_csv_to_portal">
+                  </a> <!-- test_upload_csv_to_portal -->
+                  <span class="method-name">test_upload_csv_to_portal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Assignment_Suite-class-passed -->
+          <div class="suite-Assignment_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.govtech.assignment.OppenheimerApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_insert_multiple_record_of_working_class_hero">
+                  </a> <!-- test_insert_multiple_record_of_working_class_hero -->
+                  <span class="method-name">test_insert_multiple_record_of_working_class_hero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_insert_single_record_of_working_class_hero(com.govtech.assignment.HeroDetails@2f521c4)">
+                  </a> <!-- test_insert_single_record_of_working_class_hero(com.govtech.assignment.HeroDetails@2f521c4) -->
+                  <span class="method-name">test_insert_single_record_of_working_class_hero</span>
+                  <span class="parameters">(com.govtech.assignment.HeroDetails@2f521c4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Assignment_Suite-class-passed -->
+        </div> <!-- panel Assignment_Suite -->
+        <div panel-name="test-xml-Assignment_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">N:\Nikheel\Workspace\govtech_assignment\testNg.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Assignment Suite&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.auto.listeners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.auto.listeners.WebDriverListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression Suite&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.govtech.assignment.OppenheimerGuiTest&quot;/&gt;
+      &lt;class name=&quot;com.govtech.assignment.OppenheimerApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression Suite --&gt;
+&lt;/suite&gt; &lt;!-- Assignment Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Assignment_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Assignment Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression Suite (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Assignment_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Assignment Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Assignment_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Assignment Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Assignment_Suite');
+function tableData_Assignment_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_rake_database')
+data.setCell(0, 2, 'com.govtech.assignment.OppenheimerGuiTest')
+data.setCell(0, 3, 1720);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_query_amount_of_tax_relief_for_each_person')
+data.setCell(1, 2, 'com.govtech.assignment.OppenheimerApiTest')
+data.setCell(1, 3, 898);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_dispense_button_validation')
+data.setCell(2, 2, 'com.govtech.assignment.OppenheimerGuiTest')
+data.setCell(2, 3, 886);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_upload_csv_to_portal')
+data.setCell(3, 2, 'com.govtech.assignment.OppenheimerGuiTest')
+data.setCell(3, 3, 795);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_insert_multiple_record_of_working_class_hero')
+data.setCell(4, 2, 'com.govtech.assignment.OppenheimerApiTest')
+data.setCell(4, 3, 127);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_insert_single_record_of_working_class_hero')
+data.setCell(5, 2, 'com.govtech.assignment.OppenheimerApiTest')
+data.setCell(5, 3, 89);
+window.suiteTableData['Assignment_Suite']= { tableData: data, tableDiv: 'times-div-Assignment_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-Assignment_Suite">
+              </div> <!-- times-div-Assignment_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Assignment_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Assignment Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Assignment_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Assignment_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.govtech.assignment.OppenheimerGuiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">18 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_rake_database() throws java.io.IOExceptio...)</span>
+                <span class="method-start">406 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTestSetup</span>
+                <span class="method-start">407 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_rake_database</span>
+                <span class="method-start">4760 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6496 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_rake_database() throws java.io.IOExceptio...)</span>
+                <span class="method-start">7356 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_upload_csv_to_portal() throws java.io.IOE...)</span>
+                <span class="method-start">7358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTestSetup</span>
+                <span class="method-start">7358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_upload_csv_to_portal</span>
+                <span class="method-start">11635 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">12818 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_upload_csv_to_portal() throws java.io.IOE...)</span>
+                <span class="method-start">13549 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_dispense_button_validation())</span>
+                <span class="method-start">13551 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTestSetup</span>
+                <span class="method-start">13552 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_dispense_button_validation</span>
+                <span class="method-start">16631 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18124 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.govtech.assignment.OppenheimerGuiTest.test_dispense_button_validation())</span>
+                <span class="method-start">18927 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">18928 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.govtech.assignment.OppenheimerApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_insert_single_record_of_working_class_hero(com.govtech.assignment.HeroDetails@2f521c4)</span>
+                <span class="method-start">18929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_insert_multiple_record_of_working_class_hero</span>
+                <span class="method-start">19020 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_query_amount_of_tax_relief_for_each_person</span>
+                <span class="method-start">19152 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
